@@ -2,9 +2,10 @@ import React from 'react';
 import {StyleSheet, TouchableOpacity, View, Dimensions} from 'react-native';
 import TextCmp from './TextCmp';
 
-const Button = ({title, outline}) => {
+const Button = ({title, outline, style}) => {
   return (
-    <TouchableOpacity style={outline ? styles.btn_outline : styles.btn}>
+    <TouchableOpacity
+      style={[outline ? styles.btn_outline : styles.btn, style]}>
       <TextCmp style={outline ? styles.title_outline : styles.title}>
         {title}
       </TextCmp>

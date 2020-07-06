@@ -2,16 +2,12 @@ import React from 'react';
 import {StyleSheet, Image, View, Dimensions} from 'react-native';
 import TextCmp from './TextCmp';
 
-const Banner = () => {
+const Banner = ({title, img}) => {
   return (
     <View style={styles.container}>
       <TextCmp style={styles.description}>free delivery 1:24</TextCmp>
-      <TextCmp style={styles.heading}>Salmon Bowl</TextCmp>
-      <Image
-        style={styles.image}
-        resizeMode="contain"
-        source={require('../assets/images/food1.png')}
-      />
+      <TextCmp style={styles.heading}>{title}</TextCmp>
+      <Image style={styles.image} resizeMode="contain" source={img} />
     </View>
   );
 };

@@ -3,9 +3,9 @@ import {StyleSheet, Text, View, Dimensions} from 'react-native';
 
 const w = Dimensions.get('window').width * 1.2;
 
-const BackgroundOval = () => {
+const BackgroundOval = ({style}) => {
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, style]}>
       <Text></Text>
     </View>
   );

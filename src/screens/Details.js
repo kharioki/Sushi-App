@@ -12,7 +12,7 @@ const Details = () => {
     <View style={styles.container}>
       <BackgroundOval />
       <Header />
-      <Banner />
+      <Banner title="Salmon Bowl" img={require('../assets/images/food1.png')} />
       <View style={styles.details}>
         <TextCmp style={styles.textDola}>$12</TextCmp>
         <TextCmp style={styles.desc}>

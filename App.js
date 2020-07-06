@@ -8,13 +8,14 @@ import {
   StatusBar,
 } from 'react-native';
 import Details from './src/screens/Details';
+import AddToppings from './src/screens/AddToppings';
 
 const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.flex}>
-        <Details />
+        <AddToppings />
       </SafeAreaView>
     </>
   );
